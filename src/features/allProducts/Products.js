@@ -25,7 +25,7 @@ export default function Products() {
 
   useEffect(() => {
     fetchProducts();
-  }, []);
+  });
 
   return (
     <div className="grid grid-cols-4 gap-4">
