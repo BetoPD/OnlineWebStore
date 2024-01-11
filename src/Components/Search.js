@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addLikedProduct } from "../features/likedProducts/likedProductsSlice";
 
 export default function Search() {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const title = searchParams.get("title");
   const products = useSelector((state) => state.allProducts);
   const likedProducts = useSelector((state) => state.likedProducts);
